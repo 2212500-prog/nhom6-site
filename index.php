@@ -53,7 +53,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
   <div class="badge"><span class="dot"></span><?= htmlspecialchars($server_name) ?></div>
 </nav>
 <main>
-  <p class="eyebrow">CTK46 — Môn Mạng Máy Tính</p>
+  <p class="eyebrow">CTK46 — CHUY�N �? M?NG M�Y T�NH 2</p>
   <h1>Hệ thống <span class="a1">HA</span><br><span class="a2">WordPress</span></h1>
   <p class="desc">Load Balancing · NFS Shared Storage · Rolling Update · Auto Backup</p>
   <div class="version-card">
