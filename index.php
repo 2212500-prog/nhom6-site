@@ -9,7 +9,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhóm 6 - CTK46MMT</title>
+  <title>Group 6 - CTK46MMT</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
@@ -67,8 +67,8 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
   <div class="badge"><span class="dot-pulse"></span><?= htmlspecialchars($server_name) ?></div>
 </nav>
 <main>
-  <p class="eyebrow">CTK46MMT &mdash; CHUYÊN Ð? M?NG MÁY TÍNH 2</p>
-  <h1>HA System <span class="a1">HA</span><br><span class="a2">WordPress</span></h1>
+  <p class="eyebrow">CTK46MMT &mdash; COMPUTER NETWORKING 2</p>
+  <h1><span class="a1">HA</span> System<br><span class="a2">WordPress</span></h1>
   <p class="desc">Load Balancing &middot; NFS Shared Storage &middot; Rolling Update &middot; Auto Backup</p>
   <div class="version-card">
     <div class="vi"><span class="vi-label">version</span><span class="vi-val green"><?= htmlspecialchars($version) ?></span></div>
