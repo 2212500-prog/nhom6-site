@@ -68,7 +68,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
 </nav>
 <main>
   <p class="eyebrow">CTK46MMT &mdash; CHUYÊN Ð? M?NG MÁY TÍNH 2</p>
-  <h1>H? th?ng <span class="a1">HA</span><br><span class="a2">WordPress</span></h1>
+  <h1>HA System <span class="a1">HA</span><br><span class="a2">WordPress</span></h1>
   <p class="desc">Load Balancing &middot; NFS Shared Storage &middot; Rolling Update &middot; Auto Backup</p>
   <div class="version-card">
     <div class="vi"><span class="vi-label">version</span><span class="vi-val green"><?= htmlspecialchars($version) ?></span></div>
