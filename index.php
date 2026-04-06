@@ -62,7 +62,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
 <nav>
   <div class="logo">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="8.5" x2="22" y2="8.5"/><line x1="2" y1="15.5" x2="22" y2="15.5"/></svg>
-    Nhom <span>6</span>
+    Group <span>6</span>
   </div>
   <div class="badge"><span class="dot-pulse"></span><?= htmlspecialchars($server_name) ?></div>
 </nav>
@@ -87,7 +87,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
 </main>
 <section class="ha-section">
   <p class="ha-title"><span class="ha-refresh-dot"></span> HAPROXY BACKEND &mdash; LIVE STATUS</p>
-  <div class="ha-grid" id="ha-grid"><div class="ha-loading">Dang tai...</div></div>
+  <div class="ha-grid" id="ha-grid"><div class="ha-loading">Loading...</div></div>
 </section>
 <footer><?= htmlspecialchars($server_name) ?> &middot; <?= htmlspecialchars($version) ?> &middot; Nhóm 6 CTK46MMT</footer>
 <script>
@@ -95,7 +95,7 @@ setInterval(()=>{const d=new Date();document.getElementById('clock').textContent
 function fetchStats(){fetch('stats.php?t='+Date.now()).then(r=>r.json()).then(renderStats).catch(()=>renderStats(null));}
 function renderStats(data){
   const grid=document.getElementById('ha-grid');
-  if(!data||!Object.keys(data).length){grid.innerHTML='<div class="ha-loading">Khong ket noi duoc HAProxy</div>';return;}
+  if(!data||!Object.keys(data).length){grid.innerHTML='<div class="ha-loading">Cannot connect to HAProxy</div>';return;}
   const now=new Date(),t=now.getHours().toString().padStart(2,'0')+':'+now.getMinutes().toString().padStart(2,'0')+':'+now.getSeconds().toString().padStart(2,'0');
   grid.innerHTML=['web1','web2'].map(srv=>{
     const s=data[srv],up=s&&s.status==='UP';
