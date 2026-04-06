@@ -89,7 +89,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
   <p class="ha-title"><span class="ha-refresh-dot"></span> HAPROXY BACKEND &mdash; LIVE STATUS</p>
   <div class="ha-grid" id="ha-grid"><div class="ha-loading">Loading...</div></div>
 </section>
-<footer><?= htmlspecialchars($server_name) ?> &middot; <?= htmlspecialchars($version) ?> &middot; Nhóm 6 CTK46MMT</footer>
+<footer><?= htmlspecialchars($server_name) ?> &middot; <?= htmlspecialchars($version) ?> &middot; Group 6 CTK46MMT</footer>
 <script>
 setInterval(()=>{const d=new Date();document.getElementById('clock').textContent=d.getHours().toString().padStart(2,'0')+':'+d.getMinutes().toString().padStart(2,'0')+':'+d.getSeconds().toString().padStart(2,'0');},1000);
 function fetchStats(){fetch('stats.php?t='+Date.now()).then(r=>r.json()).then(renderStats).catch(()=>renderStats(null));}
