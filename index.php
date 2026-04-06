@@ -9,7 +9,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhom 6 - CTK46MMT</title>
+  <title>Nhóm 6 - CTK46MMT</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
@@ -67,8 +67,8 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
   <div class="badge"><span class="dot-pulse"></span><?= htmlspecialchars($server_name) ?></div>
 </nav>
 <main>
-  <p class="eyebrow">CTK46MMT &mdash; CHUYEN DE MANG MAY TINH 2</p>
-  <h1>He thong <span class="a1">HA</span><br><span class="a2">WordPress</span></h1>
+  <p class="eyebrow">CTK46MMT &mdash; CHUYÊN Ð? M?NG MÁY TÍNH 2</p>
+  <h1>H? th?ng <span class="a1">HA</span><br><span class="a2">WordPress</span></h1>
   <p class="desc">Load Balancing &middot; NFS Shared Storage &middot; Rolling Update &middot; Auto Backup</p>
   <div class="version-card">
     <div class="vi"><span class="vi-label">version</span><span class="vi-val green"><?= htmlspecialchars($version) ?></span></div>
@@ -89,7 +89,7 @@ $version     = trim(file_exists(__DIR__.'/.version') ? file_get_contents(__DIR__
   <p class="ha-title"><span class="ha-refresh-dot"></span> HAPROXY BACKEND &mdash; LIVE STATUS</p>
   <div class="ha-grid" id="ha-grid"><div class="ha-loading">Dang tai...</div></div>
 </section>
-<footer><?= htmlspecialchars($server_name) ?> &middot; <?= htmlspecialchars($version) ?> &middot; Nhom 6 CTK46MMT</footer>
+<footer><?= htmlspecialchars($server_name) ?> &middot; <?= htmlspecialchars($version) ?> &middot; Nhóm 6 CTK46MMT</footer>
 <script>
 setInterval(()=>{const d=new Date();document.getElementById('clock').textContent=d.getHours().toString().padStart(2,'0')+':'+d.getMinutes().toString().padStart(2,'0')+':'+d.getSeconds().toString().padStart(2,'0');},1000);
 function fetchStats(){fetch('stats.php?t='+Date.now()).then(r=>r.json()).then(renderStats).catch(()=>renderStats(null));}
